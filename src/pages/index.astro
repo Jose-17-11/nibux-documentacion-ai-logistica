@@ -7,9 +7,14 @@ const rendered = entry ? await entry.render() : null;
 ---
 
 <Layout>
-  <main class="min-h-screen w-full bg-slate-800 pt-8">
-    <section class="max-w-[800px] p-8 bg-slate-500 text-slate-200 mx-auto rounded-lg shadow">
-      {rendered ? <rendered.Content /> : <p>No se encontró el documento</p>}
+  <main class="min-h-screen w-full bg-gradient-to-b from-slate-900 to-slate-800 py-12 px-4">
+    <section class="max-w-[850px] p-10 bg-white/95 text-slate-800 mx-auto rounded-2xl shadow-xl">
+      <h1 class="text-3xl font-bold mb-6 text-indigo-600">
+        📖 Guía del Super Agente
+      </h1>
+      <div class="prose prose-slate prose-lg max-w-none">
+        {rendered ? <rendered.Content /> : <p>No se encontró el documento</p>}
+      </div>
     </section>
   </main>
 </Layout>
