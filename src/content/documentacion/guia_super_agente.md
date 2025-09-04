@@ -1,27 +1,39 @@
-
-# 📖 Guía de Uso del Agente para Administrar el Sistema  
 </br>
 
-El agente te ayudará a **crear, editar, dar de baja u obtener información** de los datos del sistema.  
+El agente te ayudará a **crear, editar, dar de baja u obtener información** de los datos del sistema.
 Para que el agente entienda correctamente, siempre debes indicarle la **información necesaria** según la tarea que quieras realizar.  
 </br>
 ---
 
+### Datos que se pueden modificar
+</br>
+
+**1. Usuarios**.<br>
+**2. Repartidores**.<br>
+**3. Propietario**.<br>
+**4. Administrador central**.<br>
+**5. Restaurante**.<br>
+<br>
+
 ## 👤 Usuarios
 
-### 1. Crear un usuario
-Para crear un usuario debes indicarle al agente:  
-- **Nombre** del usuario.  
-- **Apellidos** del usuario (opcionales)
-- **Correo y número de teléfono**.  
-- **Rol** que tendrá (solo se pueden crear dos tipos de usuarios):  
+### 1. Crear un usuario (propietario, administrador central o repartidor)
+Para crear un usuario debes indicarle al agente:
+- **nombre**  *
+- **telefono**  *
+- **rol** * 
+    (solo se pueden crear dos tipos de usuarios):  <br>
   - Rol 2: Administrador central (gestiona restaurantes o sedes).  
-  - Rol 3: Repartidor (encargado de entregar pedidos).  
+  - Rol 3: Repartidor (encargado de entregar pedidos).
+
+- **Apellidos**(opcionales)
+- **Correo** (opcional)
 
 Ejemplo de petición al agente:  
-> “Crea un usuario con el nombre llamado Juan, apellidos Pérez, con correo juan@example.com, número 5551234567 y rol administrador central”.
-</br></br>
+> “Crea un usuario con el nombre llamado Juan, apellidos Pérez, con correo juan@example.com, número 5551234567 y rol 2”.
+</br>
 ---
+</br>
 
 ### 2. Dar de baja un usuario
 Para dar de baja a un usuario debes indicarle al agente:  
@@ -30,6 +42,9 @@ Para dar de baja a un usuario debes indicarle al agente:
 
 Ejemplo:  
 > “Dar de baja al repartidor con número 5551234567”.
+
+Esto se aplica para ambos casos cuando el usuario ya esta en el sistema pero esta dado de baja, entonces solo se le indicaria al agente que se quiere dar de alta a ese usuario.
+> “Dar de alta al repartidor con número 5551234567”.
 </br></br>
 ---
 
@@ -37,20 +52,36 @@ Ejemplo:
 
 ### 1. Crear un restaurante
 Antes de crear un restaurante, primero deben existir:  
-- Un **propietario** (usuario con datos completos).  
-- Un **administrador central**.  
+- **propietario**  
+- **administrador central**
+
+<br>
 
 Cuando quieras crear un restaurante, indícale al agente:  
-- **Nombre del restaurante**.  
-- **Dirección**.  
-- **Quién es el propietario** (teléfono).  
-- **Quién es el administrador central**.  
+- **nombre**.  
+- **direccion**.  
+- **propietario** (teléfono).  
+- **administrador central** (telefono).  
 </br>
 Ejemplo:  
-> “Crea un restaurante llamado El Sabor, en la dirección Avenida Principal 123, con propietario Juan Pérez y administrador central María López”.
+> “Crea un restaurante llamado El Sabor, **url de la ubicacion de google maps o las coordenadas extraidas de google maps**, con propietario Juan Pérez y administrador central María López”.
 </br></br>
 ---
 
+## Propietario
+
+### 1. Crear un propietario de restaurantes
+
+<br>
+
+Cuando quieras crear un propietario, indícale al agente:  
+- **telefono**.  
+
+</br>
+Ejemplo:  
+> “Crea un restaurante llamado El Sabor, **url de la ubicacion de google maps o las coordenadas extraidas de google maps**, con propietario Juan Pérez y administrador central María López”.
+</br></br>
+---
 ## 🚴 Repartidor
 
 ### 1. Crear un repartidor
