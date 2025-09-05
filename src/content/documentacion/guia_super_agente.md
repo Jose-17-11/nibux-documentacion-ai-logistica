@@ -5,16 +5,10 @@ Para que el agente entienda correctamente, siempre debes indicarle la **informac
 </br>
 ---
 
-### Datos que se pueden modificar
-</br>
+📘 Guía de uso del sistema
 
-**1. Usuarios**.<br>
-**2. Repartidores**.<br>
-**3. Propietario**.<br>
-**4. Administrador central**.<br>
-**5. Restaurante**.<br>
-<br>
-
+El agente te ayudará a crear, editar, dar de baja o consultar información en el sistema.
+Para que funcione correctamente, siempre debes darle la información esencial según la tarea que quieras realizar.
 ## 👤 Usuarios
 
 ### 1. Crear un usuario (propietario, administrador central o repartidor)
@@ -25,26 +19,29 @@ Para crear un usuario debes indicarle al agente:
     (solo se pueden crear dos tipos de usuarios):  <br>
   - Rol 2: Administrador central (gestiona restaurantes o sedes).  
   - Rol 3: Repartidor (encargado de entregar pedidos).
+  - Rol 6: Propietario (dueño de uno o varios restaurantes).  
 
 - **Apellidos**(opcionales)
 - **Correo** (opcional)
 
 Ejemplo de petición al agente:  
-> “Crea un usuario con el nombre llamado Juan, apellidos Pérez, con correo juan@example.com, número 5551234567 y rol 2”.
+> “Crea un usuario con nombre Juan Pérez, teléfono 5551234567, correo juan@example.com".
+> “Crea un usuario con nombre Carlos Ramírez, teléfono 5559876543 y rol 3 (repartidor)”.
+
 </br>
 ---
 </br>
 
-### 2. Dar de baja un usuario
+### 2. Dar de baja o dar de alta un usuario
 Para dar de baja a un usuario debes indicarle al agente:  
-- **Número de teléfono** asociado al usuario.  
-- Confirmar si es un **repartidor, administrador central, consumidor o prospecto**.  
+- **teléfono** del usuario.  
+- Confirmar su rol (propietario, administrador central o repartidor).  
 
 Ejemplo:  
 > “Dar de baja al repartidor con número 5551234567”.
+> “Dar de alta al administrador central con número 5559876543”.
 
 Esto se aplica para ambos casos cuando el usuario ya esta en el sistema pero esta dado de baja, entonces solo se le indicaria al agente que se quiere dar de alta a ese usuario.
-> “Dar de alta al repartidor con número 5551234567”.
 </br></br>
 ---
 
@@ -59,12 +56,12 @@ Antes de crear un restaurante, primero deben existir:
 
 Cuando quieras crear un restaurante, indícale al agente:  
 - **nombre**.  
-- **direccion**.  
+- **direccion** la ubicacion al inicio sera mediante las coordenadas del lugar.  
 - **propietario** (teléfono).  
 - **administrador central** (telefono).  
 </br>
 Ejemplo:  
-> “Crea un restaurante llamado El Sabor, **url de la ubicacion de google maps o las coordenadas extraidas de google maps**, con propietario Juan Pérez y administrador central María López”.
+> “Crea un restaurante llamado El Sabor, la ubicacion es 18.8454902,-98.949352, el propietario 7351230987 y administrador central 7771927364”.
 </br></br>
 ---
 
@@ -81,61 +78,6 @@ Cuando quieras crear un propietario, indícale al agente:
 Ejemplo:  
 > “Crea un restaurante llamado El Sabor, **url de la ubicacion de google maps o las coordenadas extraidas de google maps**, con propietario Juan Pérez y administrador central María López”.
 </br></br>
----
-## 🚴 Repartidor
-
-### 1. Crear un repartidor
-Debes proporcionarle al agente:  
-- **Nombre completo** del repartidor.  
-- **Correo y número de teléfono**.  
-- Especificar que su rol es **repartidor**.  
-
-Ejemplo:  
-> “Crear un repartidor llamado Carlos Ramírez, con correo carlos@ejemplo.com y teléfono 5559876543”.
-
----
-
-### 2. Cambiar disponibilidad de un repartidor
-Debes indicar:  
-- **Nombre o teléfono del repartidor**.  
-- El nuevo estatus: disponible, ocupado o fuera de servicio.  
-
-Ejemplo:  
-> “Cambia la disponibilidad del repartidor con teléfono 5559876543 a fuera de servicio”.
-
----
-
-## 📦 Pedidos
-
-### 1. Crear un pedido
-Debes indicarle al agente:  
-- **Cliente (consumidor)** que hizo el pedido (nombre o teléfono).  
-- **Restaurante** desde el que se pide.  
-- **Dirección de entrega**.  
-- **Repartidor** que lo entregará.  
-
-Ejemplo:  
-> “Crear un pedido del consumidor Ana Torres al restaurante El Sabor, dirección Calle 45 Colonia Centro, entregado por el repartidor Carlos Ramírez”.
-
----
-
-### 2. Cambiar el estado de un pedido
-Debes indicar:  
-- **Número de pedido** o datos para identificarlo.  
-- El nuevo estado: pendiente, asignado, en ruta, entregado o cancelado.  
-
-Ejemplo:  
-> “Actualiza el pedido número 120 al estado entregado”.
-
----
-
-### 3. Cancelar un pedido
-Debes indicar:  
-- **Número de pedido** o datos del cliente y restaurante.  
-
-Ejemplo:  
-> “Cancela el pedido número 125 del consumidor Pedro González en el restaurante El Sabor”.
-
 ---
 
 ## ⚠️ Notas importantes
