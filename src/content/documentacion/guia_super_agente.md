@@ -3,12 +3,16 @@
 El agente te ayudará a **crear, editar, dar de baja u obtener información** de los datos del sistema.
 Para que el agente entienda correctamente, siempre debes indicarle la **información necesaria** según la tarea que quieras realizar.  
 </br>
+
 ---
 
 📘 Guía de uso del sistema
 
 El agente te ayudará a crear, editar, dar de baja o consultar información en el sistema.
 Para que funcione correctamente, siempre debes darle la información esencial según la tarea que quieras realizar.
+
+<br>
+
 ## 👤 Usuarios
 
 ### 1. Crear un usuario (propietario, administrador central o repartidor)
@@ -29,7 +33,9 @@ Ejemplo de petición al agente:
 > “Crea un usuario con nombre Carlos Ramírez, teléfono 5559876543 y rol 3 (repartidor)”.
 
 </br>
+
 ---
+
 <br>
 
 ## 🍴 Restaurante
@@ -50,7 +56,10 @@ Cuando quieras crear un restaurante, indícale al agente:
 Ejemplo:  
 > “Crea un restaurante llamado El Sabor, la ubicacion es 18.8454902,-98.949352, el propietario 7351230987 y administrador central 7771927364”.
 </br></br>
+
 ---
+
+<br>
 
 ## Propietario
 
@@ -65,6 +74,7 @@ Cuando quieras crear un propietario, indícale al agente:
 Ejemplo:  
 > “Crea un restaurante llamado El Sabor, **url de la ubicacion de google maps o las coordenadas extraidas de google maps**, con propietario Juan Pérez y administrador central María López”.
 </br></br>
+
 ---
 
 </br>
@@ -82,6 +92,7 @@ Ejemplo:
 > “Me das una lista de todos los administradores centrales”.
 
 </br></br>
+
 ---
 
 </br>
@@ -97,6 +108,7 @@ Ejemplo:
 
 Esto se aplica para ambos casos cuando el usuario ya esta en el sistema pero esta dado de baja, entonces solo se le indicaria al agente que se quiere dar de alta a ese usuario.
 </br></br>
+
 ---
 
 </br>
@@ -112,7 +124,10 @@ Ejemplo:
 
 De preferencia a la hora de actualizar un dato se espera que sea solo un dato el que se modifica, se podra modificar varios pero al ser una version de prueba o beta se reestringe el nivel de prompt para que funcione lo mejor posible en lo que se sigue trabajando en mejorar los distintos casos posibles.
 </br></br>
+
 ---
+
+<br>
 
 ## ⚠️ Notas importantes
 - Los roles **consumidor (4)** y **prospecto (5)** **no se crean ni editan manualmente**, solo se pueden dar de baja en casos críticos.  
