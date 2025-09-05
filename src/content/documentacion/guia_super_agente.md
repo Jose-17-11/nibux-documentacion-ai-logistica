@@ -29,7 +29,7 @@ Para crear un usuario debes indicarle al agente:
 - **Correo** (opcional)
 
 Ejemplo de petición al agente:  
-> “Crea un usuario con nombre Juan Pérez, teléfono 5551234567, correo juan@example.com".
+> “Crea un usuario con nombre Juan Pérez, teléfono 5551234567, correo juan@example.com y rol 2(administrador)".
 > “Crea un usuario con nombre Carlos Ramírez, teléfono 5559876543 y rol 3 (repartidor)”.
 
 </br>
