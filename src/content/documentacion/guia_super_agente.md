@@ -29,9 +29,9 @@ Para crear un usuario debes indicarle al agente:
 - **Correo** (opcional)
 
 Ejemplo de petición al agente:  
-> “Crea un usuario con nombre Juan Pérez, teléfono 5551234567, correo juan@example.com y rol 2(administrador)".
-> “Crea un usuario con nombre Carlos Ramírez, teléfono 5559876543 y rol 3 (repartidor)”.
-
+> “Crea un usuario administrador con nombre Juan Pérez, teléfono 5551234567, correo juan@example.com".
+> “Crea un usuario repartidor con nombre Carlos Ramírez, teléfono 5559876543”.
+> “Crea un usuario con nombre Carlos Ramírez, teléfono 5559876543 propietario”.
 </br>
 
 ---
@@ -59,27 +59,9 @@ Ejemplo:
 
 ---
 
-<br>
-
-## Propietario
-
-### 3. Crear un propietario de restaurantes
-
-<br>
-
-Cuando quieras crear un propietario, indícale al agente:  
-- **telefono**.  
-
-</br>
-Ejemplo:  
-> “Crea un restaurante llamado El Sabor, **url de la ubicacion de google maps o las coordenadas extraidas de google maps**, con propietario Juan Pérez y administrador central María López”.
-</br></br>
-
----
-
 </br>
 
-### 4. Obtener datos especificos
+### 3. Obtener datos especificos
 Para obtener datos de un usuario debes indicarle al agente:  
 - **teléfono** del usuario.  
 - datos especificos (nombre, rol, telefono, etc.).  
@@ -113,7 +95,9 @@ Esto se aplica para ambos casos cuando el usuario ya esta en el sistema pero est
 
 </br>
 
-### 6. Actualizar datos de un usuario
+--- **En desarrollo** ---
+
+### 5. Actualizar datos de un usuario
 Para actualizar datos a un usuario debes indicarle al agente:  
 - **teléfono** del usuario.  
 - Dato a modificar (Nombre).  
