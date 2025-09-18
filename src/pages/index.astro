@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ChatWidget from '../components/ChatWidget.jsx'; // importar el widget
 
 const docSections = [
   {
@@ -78,6 +79,7 @@ const docSections = [
               </svg>
             </a>
           </div>
+          <ChatWidget client:load />
         </div>
 
         <!-- <div class="text-center mt-12 pt-8 border-t border-gray-100">
